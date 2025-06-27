@@ -44,4 +44,5 @@ while True:
             print("enter valid number")
     except ValueError:
         print("enter whole number")
+ask=str(input("what would you like to do today? get account info/deposit amount/withdraw amount/ view bank balance"))
     
