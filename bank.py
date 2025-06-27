@@ -33,3 +33,15 @@ class BankAccount:
         print("account holder's name:",self.AccountHolderName,". current bank balance:",self.BankBalance)
     def GetBalance(self):
         print("current bank balance:",self.BankBalance)
+name=str(input("enter account holder's name:"))
+while True:
+    try:
+        balance=int(input("enter bank balance:"))
+        if balance>=0:
+            acc1=BankAccount(name,balance)
+            break
+        else:
+            print("enter valid number")
+    except ValueError:
+        print("enter whole number")
+    
